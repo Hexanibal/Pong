@@ -23,11 +23,11 @@ public class MainFrame extends JFrame{
 
 	private void init() {
 		this.setResizable(false);
-		this.setLocationRelativeTo(null);
-		this.setSize(Main.width, Main.height);
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		this.setAlwaysOnTop(true);
+		this.setUndecorated(false);
 		this.setContentPane(pan);
+		this.pack();
 	}
 	
 }

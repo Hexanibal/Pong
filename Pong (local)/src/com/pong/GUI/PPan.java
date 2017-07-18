@@ -1,6 +1,7 @@
 package com.pong.GUI;
 
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Graphics;
 
 import javax.swing.JPanel;
@@ -11,7 +12,7 @@ import com.pong.Main;
 public class PPan extends JPanel {
 
 	public PPan() {
-		
+		this.setPreferredSize(new Dimension(Main.width, Main.height));
 	}
 	
 	public void paintComponent(Graphics g) {
