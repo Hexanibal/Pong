@@ -7,7 +7,7 @@ public class Main {
 
 	public static int width = 960;
 	public static int height = 540;
-	public static int framerate = 200;
+	public static int framerate = 500;
 	
 	public static MainFrame frame;
 	

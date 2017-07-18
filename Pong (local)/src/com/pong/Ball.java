@@ -32,4 +32,8 @@ public class Ball {
 		g.setColor(Color.red);
 	}
 	
+//	public HVector pickVelocity() {
+//		HVector v = new HVector();
+//	}
+	
 }
