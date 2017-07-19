@@ -41,7 +41,7 @@ public class Pad {
 	
 	public void addPoint(){
 		points++;
-		if(length >= 40) length -= 15;
+		if(Main.dimPads && length >= 40) length -= 15;
 	}
 	
 	public HVector getLoc(){
@@ -50,6 +50,10 @@ public class Pad {
 	
 	public int getLength() {
 		return length;
+	}
+	
+	public int getPoints() {
+		return points;
 	}
 	
 }

@@ -1,11 +1,14 @@
 package com.pong;
 
+import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics;
 
 public class Pong {
 
 	private Ball ball;
 	private Pad[] pads;
+	private Font font = new Font("Courier", Font.BOLD, 40);
 	
 	public Pong(int width, int heidth) {
 		ball = new Ball();
@@ -21,6 +24,7 @@ public class Pong {
 	}
 	
 	public void show(Graphics g) {
+		showScore(g);
 		ball.show(g);
 		pads[0].show(g);
 		pads[1].show(g);
@@ -33,6 +37,13 @@ public class Pong {
 	
 	public Pad getPad(int index){
 		return pads[index];
+	}
+	
+	public void showScore(Graphics g){
+		g.setColor(Color.WHITE);
+		g.setFont(font);
+		g.drawString(String.valueOf(pads[0].getPoints()), 23, 40);
+		g.drawString(String.valueOf(pads[1].getPoints()), Main.width - 20 - 30, 40);
 	}
 	
 }

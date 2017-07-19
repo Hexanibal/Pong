@@ -9,9 +9,9 @@ import javax.swing.JPanel;
 import com.pong.Main;
 
 @SuppressWarnings("serial")
-public class PPan extends JPanel {
+public class HPan extends JPanel {
 
-	public PPan() {
+	public HPan() {
 		this.setPreferredSize(new Dimension(Main.width, Main.height));
 	}
 	

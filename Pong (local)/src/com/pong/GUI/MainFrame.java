@@ -9,13 +9,13 @@ import com.pong.Pong;
 public class MainFrame extends JFrame{
 	
 	public Pong pong;
-	PPan pan;
+	HPan pan;
 	
 	public MainFrame() {
 		pong = new Pong(Main.width, Main.height);
 		
 		/*GUI*/
-		pan = new PPan();
+		pan = new HPan();
 		init();
 		this.setVisible(true);
 		
