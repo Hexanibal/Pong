@@ -32,7 +32,7 @@ public class Pad {
 	
 	public void show(Graphics g) {
 		g.setColor(Color.white);
-		g.fillRect(loc.x, loc.y, 25, length);
+		g.fillRect(loc.getIntX(), loc.getIntY(), 25, length);
 	}
 	
 	public void setVelocity(int x, int y){
@@ -41,7 +41,7 @@ public class Pad {
 	
 	public void addPoint(){
 		points++;
-//		if(length >= 40) length -= 20;
+		if(length >= 40) length -= 15;
 	}
 	
 	public HVector getLoc(){
