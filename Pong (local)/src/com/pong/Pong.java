@@ -26,4 +26,13 @@ public class Pong {
 		pads[1].show(g);
 	}
 	
+	public void death(Pad pad){
+		pad.addPoint();
+		ball = new Ball();
+	}
+	
+	public Pad getPad(int index){
+		return pads[index];
+	}
+	
 }

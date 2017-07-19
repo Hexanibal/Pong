@@ -8,7 +8,7 @@ import com.pong.Pong;
 @SuppressWarnings("serial")
 public class MainFrame extends JFrame{
 	
-	Pong pong;
+	public Pong pong;
 	PPan pan;
 	
 	public MainFrame() {
@@ -28,6 +28,7 @@ public class MainFrame extends JFrame{
 		this.setUndecorated(false);
 		this.setContentPane(pan);
 		this.pack();
+		this.addKeyListener(new KeyManager());
 	}
 	
 }

@@ -36,4 +36,8 @@ public class HVector {
 		this.x += hvector.x;
 		this.y += hvector.y;
 	}
+	
+	public String toString() {
+		return "x: " + x + " y: " + y;
+	}
 }
